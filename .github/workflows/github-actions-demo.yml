@@ -23,6 +23,6 @@ jobs:
       - run: echo "The job was triggered by ${{github.event_name}}"
       - run: echo "The branch used is ${GITHUB_REF##*/}"
       - name: List files in the repository
-      - run: |
+        run: |
             ls ${{ github.workspace }}
   
